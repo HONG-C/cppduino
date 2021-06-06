@@ -13,7 +13,7 @@ void msgCallback(const cppduino::MsgTutorial::ConstPtr& msg)
 
 int main(int argc, char **argv)                         // Node Main Function
 {
-  ros::init(argc, argv, "topic_subscriber");            // Initializes Node Name
+  ros::init(argc, argv, "cpp_listener");            // Initializes Node Name
 
   ros::NodeHandle nh;                                   // Node handle declaration for communication with ROS system
 
