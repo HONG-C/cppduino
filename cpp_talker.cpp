@@ -1,11 +1,11 @@
-#include "ros/ros.h"                            // ROS Default Header File
-#include "std_msgs/Float64.h"
-#include "cppduino/MsgTutorial.h"    // MsgTutorial Message File Header. The header file is automatically created when building the package.
+#include "ros/ros.h"                            // ROS기본 헤더 파일 
+#include "std_msgs/Float64.h"			//토픽 전달을 위한 메시지 헤더 파일 
+#include "cppduino/MsgTutorial.h"    // 메시지 헤더파일. 헤더파일은 빌딩 시에 기본으로 생성 
 
-int main(int argc, char **argv)                 // Node Main Function
+int main(int argc, char **argv)                 // 노드 메인 함수 
 {
-  ros::init(argc, argv, "cpp_talker");     // Initializes Node Name
-  ros::NodeHandle nh;                           // Node handle declaration for communication with ROS system
+  ros::init(argc, argv, "cpp_talker");     // 노드 이름 초기화 
+  ros::NodeHandle nh;                           //ros와 통신을 위한 노드핸들 선언 
 
   // Declare publisher, create publisher 'ros_tutorial_pub' using the 'MsgTutorial'
   // message file from the 'ros_tutorials_topic' package. The topic name is
